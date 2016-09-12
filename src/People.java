@@ -20,7 +20,7 @@ public class People {
         writeFile("people.json", personMap);
     }
 
-    static void readFile() throws Exception {
+    static void readFile() throws FileNotFoundException {
         File f = new File("people.csv");
         Scanner fileScanner = new Scanner(f);
         while (fileScanner.hasNext()) {
